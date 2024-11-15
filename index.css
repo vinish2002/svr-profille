@@ -876,7 +876,7 @@ textarea {
     font-size: 2em;
     color: #000;
     backdrop-filter: blur(10px);
-    z-index: 10;
+    /* z-index: 10; */
     transition: 400ms;
 }
 
