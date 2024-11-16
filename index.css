@@ -750,6 +750,10 @@ textarea {
     content: url('./assets/img/register.png');
 }
 
+odr:hover {
+    content: url('./assets/img/ODRRes.jpg');
+}
+
 .type:hover {
     content: url('assets/img/typeTestRes.png');
 }
