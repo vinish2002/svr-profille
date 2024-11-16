@@ -750,7 +750,7 @@ textarea {
     content: url('./assets/img/register.png');
 }
 
-odr:hover {
+.odr:hover {
     content: url('./assets/img/ODRRes.jpg');
 }
 
