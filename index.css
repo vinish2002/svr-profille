@@ -443,7 +443,12 @@ textarea {
 @media only screen and (max-width: 37.5em) {
     .home-hero {
         height: unset;
-        min-height: 100%
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -488,19 +493,21 @@ textarea {
 
 
 @media only screen and (max-width: 56.25em) {
-    .home-hero__socials {
+    /* .home-hero__socials {
         display: none;
     }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) { */
     .home-hero__socials {
         /* display: none; */
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        text-align: center;
         top: 85.6%;
-        right: 14.7%;
+        /* right: 24.7%; */
         background: transparent;
         border: none;
         box-shadow: none;
@@ -739,6 +746,14 @@ textarea {
     object-fit: cover
 }
 
+.register:hover {
+    content: url('./assets/img/register.png');
+}
+
+.type:hover {
+    content: url('assets/img/typeTestRes.png');
+}
+
 .projects__row-content {
     padding: 2rem 0;
     display: flex;
@@ -792,7 +807,7 @@ textarea {
     height: 100vh;
 }
 
-.education__content {
+/* .education__content {
     display: flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem
@@ -803,7 +818,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-gap: 8rem
     }
-}
+} */
 
 
 .cards {
@@ -887,6 +902,44 @@ textarea {
 .cards:hover>.card:not(:hover) {
     filter: blur(2px);
     transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 56.25em) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cards .card {
+        display:grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: end;
+        height: 150px;
+        width: 250px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        transition: 400ms;
+
+    }
+    .cards .card p.tip {
+        font-size: 1em;
+        font-weight: 700;
+        color: #000;
+        backdrop-filter: blur(10px);
+        transition: 400ms;
+    }
+    
+    .cards .card p.second-text {
+        font-size: 2em;
+        color: #000;
+        backdrop-filter: blur(10px);
+        /* z-index: 10; */
+        transition: 400ms;
+    }
 }
 
 /*************Flip-card styles*************/
