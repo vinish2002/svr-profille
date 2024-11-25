@@ -903,7 +903,7 @@ textarea {
     padding-top: 10px;
     max-height: 150px;
     border-radius: 30px;
-    border-bottom: 10px solid #000;
+    /* border-bottom: 10px solid #000; */
 }
 
 
@@ -930,7 +930,6 @@ textarea {
 
 .card:hover {
     transform: translateY(10px);
-    /* padding-bottom: 5px; */
 } 
 
 
