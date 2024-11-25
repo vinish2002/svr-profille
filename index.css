@@ -867,8 +867,6 @@ textarea {
     background: url("./assets/img/school.jpg") no-repeat center center;
 }
 
-
-
 .cards .card {
     display: flex;
     align-items: center;
@@ -903,9 +901,7 @@ textarea {
     padding-top: 10px;
     max-height: 150px;
     border-radius: 30px;
-    /* border-bottom: 10px solid #000; */
 }
-
 
 .cards .card p.tip {
     font-size: 3em;
@@ -921,6 +917,20 @@ textarea {
     backdrop-filter: blur(20px);
     width: 100%;
     transition: 400ms;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .card {
+        align-items: end;
+        justify-content: end;
+    }
+    .card:hover .card-details {
+        padding: 10px;
+        text-align: center;
+    }
+    .cards .card p.second-text {
+        font-size: 1.5em;
+    }
 }
 
 .cards .card:hover {
@@ -941,8 +951,12 @@ textarea {
     .cards {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         text-align: center;
+    }
+    .card {
+        justify-content: end;
+        padding-bottom: 0%;
     }
     .cards .card {
         display:grid;
@@ -959,9 +973,8 @@ textarea {
 
     }
     .cards .card p.tip {
-        font-size: 1em;
+        font-size: 2em;
         font-weight: 700;
-        color: #000;
         backdrop-filter: blur(10px);
         transition: 400ms;
     }
