@@ -852,7 +852,7 @@ textarea {
 }
 
 .cards .blue:hover {
-    background: url("./assets/img/Narayana.jpg");
+    background: url("./assets/img/inter.jpg") no-repeat center center;
 }
 
 .cards .red {
@@ -864,7 +864,7 @@ textarea {
 }
 
 .cards .red:hover {
-    background: url("./assets/png/ssv.avif");
+    background: url("./assets/img/school.jpg") no-repeat center center;
 }
 
 
@@ -883,25 +883,56 @@ textarea {
     transition: 400ms;
 }
 
+.card-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover .card-header {
+    display: none;
+}
+
+.card-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+}
+
+.card:hover .card-details {
+    padding-top: 10px;
+    max-height: 150px;
+    border-radius: 30px;
+    border-bottom: 10px solid #000;
+}
+
+
 .cards .card p.tip {
     font-size: 3em;
     font-weight: 700;
     color: #000;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     transition: 400ms;
 }
 
 .cards .card p.second-text {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #000;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     /* z-index: 10; */
+    width: 100%;
     transition: 400ms;
 }
 
 .cards .card:hover {
     transform: scale(1.1, 1.1);
 }
+
+.card:hover {
+    transform: translateY(10px);
+    /* padding-bottom: 5px; */
+} 
+
 
 .cards:hover>.card:not(:hover) {
     filter: blur(2px);
@@ -945,62 +976,6 @@ textarea {
         transition: 400ms;
     }
 }
-
-/*************Flip-card styles*************/
-/* .flip-card {
-    background-color: transparent;
-    width: 190px;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid coral;
-    border-radius: 1rem;
-  }
-  
-  .flip-card-front {
-    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-    color: coral;
-  }
-  
-  .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%);
-    color: white;
-    transform: rotateY(180deg);
-  } */
 
 
 /*********************Contact Section*********************/
