@@ -371,7 +371,7 @@ textarea {
     display: inline-block;
     font-weight: 700;
     border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.544);
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.144);
     transition: transform .3s;
     filter: drop-shadow(0 0 10px #fffdef)
 }
