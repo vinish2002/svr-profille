@@ -826,7 +826,6 @@ textarea {
 }
 
 .cards .green {
-    /* background-color: #18cd5e; */
     border-radius: 1rem;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #ee5454 0%, #2130d3 46%, #3890fc 100%);
