@@ -811,13 +811,6 @@ textarea {
     height: 100vh;
 }
 
-/* .education__content {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem
-}
-*/
-
 @media only screen and (max-width: 56.25em) {
     .education {
         height: auto;
